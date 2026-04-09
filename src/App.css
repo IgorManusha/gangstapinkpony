@@ -1,9 +1,13 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
-  height: 40vmin;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -14,14 +18,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  top: -200px;
+  left: -296px;
+  position: relative;
+
+  width: 120%;
+  height: 1200px;
+  background-size: cover;
+  background-image: url("../img/jeka.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(41, 25, 25);
 }
 
 .App-link {
@@ -34,5 +43,121 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.mainTitle {
+  font-size: 80px;
+  color: wheat;
+  position: relative;
+}
+
+.mainTitleGansta {
+  font-size: 80px;
+  color: wheat;
+  position: relative;
+}
+
+.audioContainer {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/zastavka.jpg");
+  background-size: cover;
+  opacity: 0.9;
+  width: 700px;
+  height: 550px;
+  padding: 50px 0px 0px 0px;
+  border-radius: 20px;
+}
+
+.decoreLine {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 300px;
+  z-index: 0;
+  background-color: rgb(34, 29, 20);
+  opacity: 59%;
+}
+
+/* ========================= */
+/* 📱 TABLET (до 1024px) */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .App-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .mainTitle,
+  .mainTitleGansta {
+    font-size: 50px;
+  }
+
+  .audioContainer {
+    width: 90%;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .decoreLine {
+    height: 150px;
+    top: 250px;
+  }
+}
+
+/* ========================= */
+/* 📱 MOBILE (до 600px) */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .App-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 80px 15px;
+  }
+
+  .mainTitle,
+  .mainTitleGansta {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .audioContainer {
+    width: 95%;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  audio {
+    width: 90%;
+  }
+
+  .App-logo {
+    height: 20vmin;
+  }
+
+  .decoreLine {
+    height: 120px;
+    top: 200px;
   }
 }
