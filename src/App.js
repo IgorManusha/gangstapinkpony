@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import AudioFile from "./media/Game.mp3";
-import AudioFile2 from "./media/secondTreck.mp3";
-import AudioFile3 from "./media/trek.wav";
+import AudioFile from "./img/Game.mp3";
+import AudioFile2 from "./img/secondTreck.mp3";
+import AudioFile3 from "./img/trek.wav";
 function App() {
   return (
     <div className="App">
