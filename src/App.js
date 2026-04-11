@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import audioFile from "./media/trek.wav";
-import audioFile2 from "./media/secondTreck.mp3";
-import audioFile3 from "./media/Game.mp3";
+import AudioFile from "./media/Game.mp3";
+import AudioFile2 from "./media/secondTreck.mp3";
+import AudioFile3 from "./media/trek.wav";
 function App() {
   return (
     <div className="App">
@@ -12,13 +12,13 @@ function App() {
         <h2 className="mainTitle">Pinck Pony</h2>
         <div className="audioContainer">
           <audio controls>
-            <source src={audioFile} type="audio/wav" />
+            <source src={AudioFile} type="audio/wav" />
           </audio>
           <audio controls>
-            <source src={audioFile2} type="audio/wav" />
+            <source src={AudioFile2} type="audio/wav" />
           </audio>
           <audio controls>
-            <source src={audioFile3} type="audio/wav" />
+            <source src={AudioFile3} type="audio/wav" />
           </audio>
         </div>
         <img src={logo} className="App-logo" alt="logo" />
