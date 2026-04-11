@@ -1,1 +1,0 @@
-#gansta pink pony
